@@ -42,20 +42,3 @@ schaduale date,
 FOREIGN KEY (student_id) REFERENCES students(ID)
 
 );
-
-create table Assignments(
-ID int primary key ,
-name varchar(255) not null ,
-description varchar(255) not null ,
-due date,
-States varchar(255),
-);
-
-create table attendance(
-ID int primary key ,
-class_code varchar(255) not null ,
-Room_number varchar(255) not null ,
-schaduale date,
-FOREIGN KEY (student_id) REFERENCES students(ID)
-
-);
